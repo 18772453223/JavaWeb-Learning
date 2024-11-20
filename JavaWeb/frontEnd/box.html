@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reson学习辅助系统</title>
+    <link rel="stylesheet" href="./css/box.css">
+</head>
+<body>
+    <div class="header">
+        <span class="title">Reson学习辅助系统</span>
+        <a href="#">退出系统</a>
+    </div>
+
+    <!-- 查询和删除表单 -->
+    <form class="form-container">
+        <label for="gender">性别:</label>
+        <label for="male">男
+        <input type="radio" id="male" name="gender" value="male"></label>
+        
+        <label for="female">女
+        <input type="radio" id="female" name="gender" value="female"></label>
+        
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" placeholder="请输入姓名">
+
+        <label for="position">职位:</label>
+        <select id="position" name="position">
+            <option value="manager">经理</option>
+            <option value="developer">开发者</option>
+            <option value="designer">设计师</option>
+        </select>
+
+        <button type="submit" onclick="alert('查询')">查询</button>
+        <button type="button" onclick="alert('删除')">删除</button>
+    </form>
+
+    <!-- 员工信息展示表格 -->
+    <div class="container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>头像</th>
+                    <th>职位</th>
+                    <th>入职日期</th>
+                    <th>最后操作时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>男</td>
+                    <td><img src="https://via.placeholder.com/40" alt="张三头像" class="avatar"></td>
+                    <td>开发者</td>
+                    <td>2023-01-15</td>
+                    <td>2024-11-18 10:30</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn">编辑</button>
+                        <button class="delete-btn">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>女</td>
+                    <td><img src="https://via.placeholder.com/40" alt="李四头像" class="avatar"></td>
+                    <td>设计师</td>
+                    <td>2022-08-21</td>
+                    <td>2024-11-17 14:45</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn">编辑</button>
+                        <button class="delete-btn">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>男</td>
+                    <td><img src="https://via.placeholder.com/40" alt="王五头像" class="avatar"></td>
+                    <td>产品经理</td>
+                    <td>2021-05-10</td>
+                    <td>2024-11-16 09:15</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn">编辑</button>
+                        <button class="delete-btn">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>赵六</td>
+                    <td>女</td>
+                    <td><img src="https://via.placeholder.com/40" alt="赵六头像" class="avatar"></td>
+                    <td>数据分析师</td>
+                    <td>2020-12-01</td>
+                    <td>2024-11-15 16:00</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn">编辑</button>
+                        <button class="delete-btn">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+span{
+    color: grey;
+}
+/* 1、标签名 */
+h1{
+    color: #000;
+    font-size: 30px;
+    
+    text-align: center;
+}
+/* 2.class */
+.cls{
+    
+    font-weight: bold;
+}
+/* 3.id usage */
+#what{
+    font-size: 20px;
+    color: #554ed4;
+    font-weight: bold;
+}
+
+p{
+    /* define line height */
+    line-height: 2;
+    /* 设置首行缩进 */
+    text-indent: 2em;
+    /* 文本居中 */
+    /* text-align: center; */
+}
+
+#content{
+    width: 70%;
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box; /* 包括内边距和边框在宽度内 */
+  }
+
+  a{
+    /* 去下划线 */
+    text-decoration: none;
+  }
